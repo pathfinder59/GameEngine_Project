@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 5ac1f1101aed4de47b01f64ef499aeb4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9130008681262292161
+    second: fire_trap_03
+  - first:
+      213: 4488413847045243145
+    second: fire_trap_04
+  - first:
+      213: -2983483174491970560
+    second: fire_trap_2
+  - first:
+      213: 8583798181626875637
+    second: fire_trap_00
+  - first:
+      213: -8238233372958333910
+    second: fire_trap_01
+  - first:
+      213: 328756785621594006
+    second: fire_trap_02
+  - first:
+      213: -2904170051904979289
+    second: fire_trap_07
+  - first:
+      213: 370267847763506645
+    second: fire_trap_06
+  - first:
+      213: 3883068473297208895
+    second: fire_trap_8
+  - first:
+      213: -5491475067525882536
+    second: fire_trap_9
+  - first:
+      213: -174491566038350968
+    second: fire_trap_10
+  - first:
+      213: -7966263880451779741
+    second: fire_trap_05
+  - first:
+      213: -1094963469565498794
+    second: fire_trap_09
+  - first:
+      213: -420448993610472608
+    second: fire_trap_08
+  - first:
+      213: -2549216146805115350
+    second: fire_trap_14
+  - first:
+      213: -3743494763312733734
+    second: fire_trap_15
+  - first:
+      213: -345852865580088284
+    second: fire_trap_16
+  - first:
+      213: -7010147360232210533
+    second: fire_trap_17
+  - first:
+      213: 5859542229204191207
+    second: fire_trap_18
+  - first:
+      213: -6789740439546078804
+    second: fire_trap_10
+  - first:
+      213: -1488573971414860083
+    second: fire_trap_20
+  - first:
+      213: 7775084906799017588
+    second: fire_trap_21
+  - first:
+      213: 2120775619407090037
+    second: fire_trap_22
+  - first:
+      213: -5287309831723089686
+    second: fire_trap_23
+  - first:
+      213: -7668685512776546555
+    second: fire_trap_24
+  - first:
+      213: -3452335310260775866
+    second: fire_trap_11
+  - first:
+      213: -7099479047541319269
+    second: fire_trap_12
+  - first:
+      213: 9034238940233436313
+    second: fire_trap_13
+  - first:
+      213: 5676763913764871754
+    second: fire_trap_14
+  - first:
+      213: -8187745160979112106
+    second: fire_trap_29
+  - first:
+      213: -2055227170119066593
+    second: fire_trap_30
+  - first:
+      213: -6476265821832254005
+    second: fire_trap_31
+  - first:
+      213: 2680219258466358745
+    second: fire_trap_32
+  - first:
+      213: 306847320165838216
+    second: fire_trap_33
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 200
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fire_trap_03
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 477
+        width: 84
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33e02d2a71bb4180800000000000000
+      internalID: -9130008681262292161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_04
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 476
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901831efc9c0a4e30800000000000000
+      internalID: 4488413847045243145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_2
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 559
+        width: 17
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0042d072cd98896d0800000000000000
+      internalID: -2983483174491970560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_00
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 476
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9.5, y: 22}
+        - {x: -13.5, y: 8}
+        - {x: -13.5, y: -22}
+        - {x: 13.5, y: -22}
+        - {x: 13.5, y: 3}
+        - {x: 1.5, y: 22}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe838f97f6cf1770800000000000000
+      internalID: 8583798181626875637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_01
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 476
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24ec04356aebad80800000000000000
+      internalID: -8238233372958333910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_02
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 476
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f69700e8aff8400800000000000000
+      internalID: 328756785621594006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_07
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 264
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae30e889b052b7d0800000000000000
+      internalID: -2904170051904979289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_06
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 263
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d531b155a4732500800000000000000
+      internalID: 370267847763506645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_05
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 262
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36395a23535227190800000000000000
+      internalID: -7966263880451779741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_09
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 263
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ae48a9688edc0f0800000000000000
+      internalID: -1094963469565498794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_08
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 258
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 38, y: 2.5}
+        - {x: 26, y: 2.5}
+        - {x: 25, y: -0.5}
+        - {x: 26, y: -3.5}
+        - {x: 13, y: 8.5}
+        - {x: 37, y: 20.5}
+        - {x: 31, y: 48.5}
+        - {x: 17, y: 55.5}
+        - {x: -18, y: 55.5}
+        - {x: -39, y: 19.5}
+        - {x: -39, y: -43.5}
+        - {x: -29, y: -55.5}
+        - {x: 17, y: -55.5}
+        - {x: 24, y: -53.5}
+        - {x: 32, y: -39.5}
+        - {x: 39, y: -23.5}
+        - {x: 39, y: -0.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0636da13ed34a2af0800000000000000
+      internalID: -420448993610472608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_10
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 57
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca950c73b0ff5c1a0800000000000000
+      internalID: -6789740439546078804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_11
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 60
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6445e5a9357d610d0800000000000000
+      internalID: -3452335310260775866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_12
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 60
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9998f0cb65997d90800000000000000
+      internalID: -7099479047541319269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 61
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c8d906370106d70800000000000000
+      internalID: 9034238940233436313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fire_trap_14
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 57
+        width: 84
+        height: 150
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e16b9e3bae7ce40800000000000000
+      internalID: 5676763913764871754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e9a3726a7ca18d49b73d1fe07761ebc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
