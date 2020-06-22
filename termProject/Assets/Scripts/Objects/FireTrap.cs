@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireTrap : MonoBehaviour
 {
     // Start is called before the first frame updat
-
+    //..
     [SerializeField] private Animator animator = null;
     [SerializeField] private float coolTime = 0;
     private bool isFire;

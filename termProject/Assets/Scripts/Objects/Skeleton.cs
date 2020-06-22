@@ -7,7 +7,7 @@ public class Skeleton : MonoBehaviour,IDamagable
     [SerializeField] private GameObject player = null;
     [SerializeField] private Animator animator = null;
     
-    // Start is called before the first frame update
+    // Start is called before the first frame update.
     public float HitPoint { get; private set; }
     public float AttackTime  { get; private set; }
 

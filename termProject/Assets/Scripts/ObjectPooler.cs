@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ObjectPooler : MonoBehaviour
 {
-    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject player;//
 
     public GameObject[] prefabs;
     Dictionary<string, List<GameObject>> poolDictionary;

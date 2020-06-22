@@ -8,7 +8,7 @@ public class Sign : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI uiExplain = null;
     void Start()
     {
-        
+     //   
     }
 
     // Update is called once per frame

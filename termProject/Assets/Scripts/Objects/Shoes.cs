@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shoes : MonoBehaviour
 {
-    // Start is called before the first frame update
+    // Start is called before the first frame updates
     void Start()
     {
         
