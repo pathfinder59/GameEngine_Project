@@ -16,6 +16,7 @@ public class PlayerModule : MonoBehaviour
         isDown = 16,
         isRoll = 32
     }
+    ..
     */
     [SerializeField] private Animator animator = null;
     [SerializeField] private Rigidbody2D rootRigid = null;
