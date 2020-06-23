@@ -33,6 +33,8 @@ public class PlayerModule : MonoBehaviour
     private bool isRoll = false;
     private bool isArrow = false;
 
+
+    private int life;
     public bool Reverse{
         get { return isReverse; }
     }
@@ -51,6 +53,7 @@ public class PlayerModule : MonoBehaviour
 
     public void Start()
     {
+        life = 3; 
         jumpPower = 70f;
     }
     public void Awake()
@@ -116,7 +119,7 @@ public class PlayerModule : MonoBehaviour
             
             if (!isDown)
             {
-                //transform.Translate(new Vector3(0, -bottomTransform.localPosition.y * .5f), 0);
+                
                 rootRigid.velocity = Vector2.zero;
                 rootRigid.AddForce(new Vector2(0, jumpPower));
             }
@@ -130,7 +133,7 @@ public class PlayerModule : MonoBehaviour
                 }
                 animator.SetBool("Drop", true);
                 PlatformEffector2D effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
-                effector.surfaceArc = 0;
+                effector.surfaceArc = 0.0f;
             }
             isJump = true;
             bottomCollider.enabled = true;

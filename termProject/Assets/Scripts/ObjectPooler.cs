@@ -63,7 +63,7 @@ public class ObjectPooler : MonoBehaviour
         }
         if(gameObjectName == "Trap_Arrow")
         {
-            go.transform.Translate(0.13f, 0, 0);
+            go.transform.Translate(0.16f, 0, 0);
         }
         return go;
     }

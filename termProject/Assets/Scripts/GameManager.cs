@@ -2,19 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[System.Serializable]
+public class Transforms
+{
+    public GameObject[] m_tTransforms;
+}
 public class GameManager : MonoBehaviour
 {
 
-    [SerializeField] private GameObject Arrow;
+
     [SerializeField] private Camera cam = null;
     [SerializeField] private GameObject player = null;
-    [SerializeField] private PlayerModule playerModule;
 
+    [SerializeField] private GameObject[] prefabs;
 
+    [SerializeField] private Transforms[] transforms;
+    
     void Start()
     {
-       
+        for (int i = 0; i < prefabs.Length; ++i)
+        {
+            for (int k = 0; k < transforms[i].m_tTransforms.Length; ++k)
+            {
+                var go = Instantiate(prefabs[i]);
+                go.transform.localPosition = transforms[i].m_tTransforms[k].transform.position;
+                go.transform.localRotation = transforms[i].m_tTransforms[k].transform.rotation;
+                go.transform.localScale = transforms[i].m_tTransforms[k].transform.localScale;
+            }
+
+        }
     }
 
 

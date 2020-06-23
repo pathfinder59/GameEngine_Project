@@ -21,16 +21,14 @@ public class CrossBow : MonoBehaviour
         if (m_fCoolTime > 0)
             m_fCoolTime -= Time.deltaTime;
 
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.layer != 10) return;
-
         if (m_fCoolTime <= 0)
         {
             objectPooler.Spawn("Trap_Arrow", transform);
             m_fCoolTime = coolTime;
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
     }
 }
