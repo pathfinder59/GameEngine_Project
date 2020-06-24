@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\Objects\Shoes.cs" />
     <Compile Include="Assets\Scripts\Objects\Sign.cs" />
     <Compile Include="Assets\Scripts\Objects\Skeleton.cs" />
+    <Compile Include="Assets\Scripts\Objects\Switch.cs" />
     <Compile Include="Assets\Scripts\Objects\TrapBlock.cs" />
     <Compile Include="Assets\Scripts\Objects\Trap_Arrow.cs" />
     <Compile Include="Assets\Scripts\Outliner.cs" />

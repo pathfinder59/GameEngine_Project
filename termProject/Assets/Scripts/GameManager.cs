@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
             }
 
         }
+
+        EventHandler.Instance.Subscribe("PlayerDied", ResetPlayerPosition);
     }
 
 
@@ -53,5 +55,10 @@ public class GameManager : MonoBehaviour
         position.y = position.y + 0.3f;
         cam.transform.localPosition = position;
         
+    }
+
+    public void ResetPlayerPosition()
+    {
+        player.transform.position = new Vector3(-12.683f, -0.375f, 0);
     }
 }

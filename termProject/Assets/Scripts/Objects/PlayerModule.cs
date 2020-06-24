@@ -166,9 +166,20 @@ public class PlayerModule : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == 15)
+        if (collision.gameObject.layer == 16 || collision.gameObject.layer == 13 || collision.gameObject.layer == 12)
+        {
+            EventHandler.Instance.Emit("PlayerDied");
+        }
+        if (collision.gameObject.layer == 15)
         {
             jumpPower += 20;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 16 || collision.gameObject.layer == 13 || collision.gameObject.layer == 12)
+        {
+            EventHandler.Instance.Emit("PlayerDied");
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -176,8 +187,10 @@ public class PlayerModule : MonoBehaviour
         if (collision.gameObject.layer != 8 && collision.gameObject.layer != 9 && collision.gameObject.layer != 11) return;
 
     }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
+        
         if (collision.gameObject.layer != 8 && collision.gameObject.layer != 9 && collision.gameObject.layer != 11) return;
 
         isRoll = true;

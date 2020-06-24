@@ -53,7 +53,7 @@ public class EventHandler : MonoBehaviour
 
         foreach(EventDelegate del in dels)
         {
-            print(message: "33");
+            del();
         }
     }
 }
