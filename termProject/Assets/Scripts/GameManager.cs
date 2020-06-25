@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
         position.y = position.y + 0.3f;
         cam.transform.localPosition = position;
         
+        
     }
 
     public void ResetPlayerPosition()

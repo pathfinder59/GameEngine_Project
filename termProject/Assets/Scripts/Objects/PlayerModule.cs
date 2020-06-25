@@ -4,6 +4,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+
+using UnityEngine.SceneManagement;
+
+
 public class PlayerModule : MonoBehaviour
 {
     /*   [Flags]
@@ -64,7 +68,10 @@ public class PlayerModule : MonoBehaviour
     {
         uiHp.text = "HP: " + life.ToString();
        // TMPro.TextMeshPro textMesh = uiHp.GetComponent<TMPro.TextMeshPro>();
-
+        if(life <= 0)
+        {
+            SceneManager.LoadScene("OverScene");
+        }
         if (arrowCoolTime > 0)
             arrowCoolTime -= Time.deltaTime;
 
