@@ -23,6 +23,10 @@ public class TrapBlock : MonoBehaviour
             rigidbody2D.bodyType = RigidbodyType2D.Dynamic;
             
         }
+        else if(collision.gameObject.layer == 18)
+        {
+            gameObject.SetActive(false);
+        }
         return;
     }
 }

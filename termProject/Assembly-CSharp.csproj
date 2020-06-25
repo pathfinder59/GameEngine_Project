@@ -73,10 +73,12 @@
     <Compile Include="Assets\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\ObjectPooler.cs" />
     <Compile Include="Assets\Scripts\Objects\Arrow.cs" />
+    <Compile Include="Assets\Scripts\Objects\Boomb.cs" />
     <Compile Include="Assets\Scripts\Objects\CrossBow.cs" />
     <Compile Include="Assets\Scripts\Objects\Enemy.cs" />
     <Compile Include="Assets\Scripts\Objects\FireTrap.cs" />
     <Compile Include="Assets\Scripts\Objects\PlayerModule.cs" />
+    <Compile Include="Assets\Scripts\Objects\Rope.cs" />
     <Compile Include="Assets\Scripts\Objects\Shoes.cs" />
     <Compile Include="Assets\Scripts\Objects\Sign.cs" />
     <Compile Include="Assets\Scripts\Objects\Skeleton.cs" />

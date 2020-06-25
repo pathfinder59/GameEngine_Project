@@ -44,7 +44,7 @@ public class PlayerModule : MonoBehaviour
     }
 
 
-    private float jumpPower = 70f;
+    private float jumpPower = 0f;
     //[NonSerialized] public StatusFlag flag = 0;
 
     Collider2D curCollider = null;
@@ -54,7 +54,7 @@ public class PlayerModule : MonoBehaviour
     public void Start()
     {
         life = 3; 
-        jumpPower = 70f;
+        jumpPower = 60f;
     }
     public void Awake()
     {
@@ -62,7 +62,7 @@ public class PlayerModule : MonoBehaviour
     }
     private void Update()
     {
-        uiHp.text = "HP: " + "10";
+        uiHp.text = "HP: " + life.ToString();
        // TMPro.TextMeshPro textMesh = uiHp.GetComponent<TMPro.TextMeshPro>();
 
         if (arrowCoolTime > 0)
@@ -169,10 +169,17 @@ public class PlayerModule : MonoBehaviour
         if (collision.gameObject.layer == 16 || collision.gameObject.layer == 13 || collision.gameObject.layer == 12)
         {
             EventHandler.Instance.Emit("PlayerDied");
+            life--;
         }
         if (collision.gameObject.layer == 15)
         {
-            jumpPower += 20;
+            jumpPower += 10.0f;
+        }
+        else if (collision.gameObject.layer == 17)
+        {
+            animator.SetBool("Jump", true);
+            transform.Translate(0, 0.001f, 0);
+            rootRigid.AddForce(new Vector2(0, 40f));
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -180,7 +187,9 @@ public class PlayerModule : MonoBehaviour
         if (collision.gameObject.layer == 16 || collision.gameObject.layer == 13 || collision.gameObject.layer == 12)
         {
             EventHandler.Instance.Emit("PlayerDied");
+            life--;
         }
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
