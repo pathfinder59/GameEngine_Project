@@ -5,7 +5,7 @@ using UnityEngine;
 public class Arrow : MonoBehaviour,IDamagable
 {
     // Start is called before the first frame update
-
+    //.
     void Start()
     {
     

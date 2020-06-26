@@ -5,6 +5,7 @@ using UnityEngine;
 public class Trap_Arrow : MonoBehaviour
 {
     // Start is called before the first frame update
+    //.
     void Start()
     {
 
