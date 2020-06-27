@@ -295,5 +295,14 @@ public class PlayerModule : MonoBehaviour
         { animator.SetBool("Roll", false); }
 
     }
+    IEnumerator isAttacking()
+    {
+        for(float i = 0; i<3.0; ++i)
+        {
 
+            yield return null;
+        }
+        
+    }
 }
+

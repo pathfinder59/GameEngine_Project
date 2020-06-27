@@ -78,6 +78,7 @@
     <Compile Include="Assets\Scripts\Objects\CrossBow.cs" />
     <Compile Include="Assets\Scripts\Objects\Enemy.cs" />
     <Compile Include="Assets\Scripts\Objects\FireTrap.cs" />
+    <Compile Include="Assets\Scripts\Objects\MagicBlock.cs" />
     <Compile Include="Assets\Scripts\Objects\PlayerModule.cs" />
     <Compile Include="Assets\Scripts\Objects\Rope.cs" />
     <Compile Include="Assets\Scripts\Objects\Shoes.cs" />
