@@ -7,7 +7,7 @@
 
 ## 게임소개
 ### 소개
-미로를 탐험하면서 집을  찾아 내야하는 2D Adventure
+- 미로를 탐험하면서 집을 찾아 내야하는 2D Adventure
 
 ### 게임 설명
 - 게임 맵 내의 적들 및 함정을 통과하면서 미로를 클리어해야 한다.  
@@ -41,11 +41,14 @@
 비활성화 물체를 찾아서 활성화시켜서 사용하도록 한다. 만일 20개를 넘게 사용할 경우 그 때마다 새로 하나씩 생성한다.
 
 5. eventHandler
-- 
+- GameManager에서 실행시 EventHandler에 "PlayerDied" 이벤트 등록, 호출 함수는 플레이어를 시작위치로 되돌리는 함수이다.
+그 후 플레이어의 스크립트에서 몬스터,함정과 충돌하거나 맵밖으로 떨어져 나갈 시 "PlayerDied" 이벤트를 호출하여 시작위치로 되돌아간다.
 
 6. IEnumerator
-- 
-
+- 정해진 시간만큼 사라졌다가 다시 생기는 행동을 반복하는 MagicBlock에서 사용된다.
+사라졌다 나타나는 행동들의 코드를 전부 IEnumerator에 담아두고 특정 행동을 마칠때마다 yield return null호출.
+그리고 다음 Update에서 이를 또 호출하여 다음 동작을 수행하도록 하게 되어 있다.
+- 순서: 등장 지속시간 측정 -> 서서히 사라지는 애니메이션 -> 사라져있을 동안의 시간 측정 -> 서서히 등장하는 애니메이션
 
 ## 에셋 출처(스프라이트)
 카호: https://www.spriters-resource.com/pc_computer/momodorareverieunderthemoonlight/sheet/86754/  
