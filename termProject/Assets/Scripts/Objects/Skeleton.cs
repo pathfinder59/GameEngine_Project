@@ -6,7 +6,8 @@ public class Skeleton : MonoBehaviour,IDamagable
 {
     [SerializeField] private GameObject player = null;
     [SerializeField] private Animator animator = null;
-    
+    [SerializeField] private GameObject particle = null;
+
     // Start is called before the first frame update.
     public float HitPoint { get; private set; }
     public float AttackTime  { get; private set; }
@@ -32,7 +33,14 @@ public class Skeleton : MonoBehaviour,IDamagable
 
         if(HitPoint <= 0)
         {
-            gameObject.SetActive(false);
+            particle.SetActive(true);
+            particle.transform.position = new Vector3(transform.position.x, transform.position.y-0.18f, transform.position.z);
+            //gameObject.SetActive(false);
+            pSystem sys = particle.gameObject.GetComponent<pSystem>();
+
+            sys.playTime = 0;
+            
+            Destroy(gameObject);
         }
     }
 
@@ -67,7 +75,7 @@ public class Skeleton : MonoBehaviour,IDamagable
         if (collision.gameObject.layer == 14)
         {
             Damage(5);
-            transform.Translate(-0.1f, 0, 0);
+            //transform.Translate(-0.1f, 0, 0);
         }
     }
  

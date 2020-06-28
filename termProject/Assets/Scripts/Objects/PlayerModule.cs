@@ -197,6 +197,10 @@ public class PlayerModule : MonoBehaviour
             life--;
         }
         
+        if(collision.gameObject.layer == 20)
+        {
+            SceneManager.LoadScene("ClearScene");
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -295,14 +299,6 @@ public class PlayerModule : MonoBehaviour
         { animator.SetBool("Roll", false); }
 
     }
-    IEnumerator isAttacking()
-    {
-        for(float i = 0; i<3.0; ++i)
-        {
-
-            yield return null;
-        }
-        
-    }
+    
 }
 
