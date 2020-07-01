@@ -15,9 +15,12 @@ public class Arrow : MonoBehaviour,IDamagable
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(0.5f * Time.fixedDeltaTime, 0, 0);      
+        //transform.Translate(0.5f * Time.fixedDeltaTime, 0, 0);      
     }
-
+    private void FixedUpdate()
+    {
+        transform.Translate(1.5f * Time.fixedDeltaTime, 0, 0);
+    }
     public float HitPoint { get; private set; }
     public void Damage(float damageAmount)
     {
