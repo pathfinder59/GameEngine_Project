@@ -7,6 +7,7 @@ public class Skeleton : MonoBehaviour,IDamagable
     [SerializeField] private GameObject player = null;
     [SerializeField] private Animator animator = null;
     [SerializeField] private GameObject particle = null;
+    [SerializeField] private CapsuleCollider2D collider2D = null;
 
     // Start is called before the first frame update.
     public float HitPoint { get; private set; }
@@ -39,8 +40,10 @@ public class Skeleton : MonoBehaviour,IDamagable
             pSystem sys = particle.gameObject.GetComponent<pSystem>();
 
             sys.playTime = 0;
-            
-            Destroy(gameObject);
+
+            animator.SetBool("Dead", true);
+            collider2D.enabled = false;
+            gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         }
     }
 
@@ -52,6 +55,8 @@ public class Skeleton : MonoBehaviour,IDamagable
     // Update is called once per frame
     void Update()
     {
+        if (HitPoint <= 0)
+            return;
         float dir = 0;
         if (isNearPlayer(ref dir))
         {

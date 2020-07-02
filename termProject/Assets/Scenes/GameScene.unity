@@ -238,7 +238,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC774 \uBE14\uB7ED \uC5B4\uB518\uAC00    \uC4F8 \uBAA8 \uC788\uC744 \uC218\uB3C4?..."
+  m_text: "\uC5B4\uB5A4 \uACF5\uACA9\uC774\uB4E0 \uB9C9\uC744 \uC218 \uC788\uB294
+    \uBE14\uB7ED"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 166bc4491cb9b2f4996f3a8d68978dd4, type: 2}
   m_sharedMaterial: {fileID: -6434531259547080146, guid: 166bc4491cb9b2f4996f3a8d68978dd4,
@@ -10066,12 +10067,12 @@ PrefabInstance:
     - target: {fileID: 2673972327073943720, guid: 420934e174d194c4c81321e2453595b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.85
+      value: -10.59
       objectReference: {fileID: 0}
     - target: {fileID: 2673972327073943720, guid: 420934e174d194c4c81321e2453595b4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.01
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: 2673972327073943720, guid: 420934e174d194c4c81321e2453595b4,
         type: 3}
@@ -10122,6 +10123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Simulated
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673972327073943721, guid: 420934e174d194c4c81321e2453595b4,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2673972327073943722, guid: 420934e174d194c4c81321e2453595b4,
         type: 3}
@@ -12045,7 +12051,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1930245351}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -12056,7 +12062,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!19719996 &1930245355
 TilemapCollider2D:
