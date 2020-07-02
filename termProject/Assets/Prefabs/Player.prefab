@@ -115,8 +115,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00040635467, y: -0.0012417734}
-  m_Size: {x: 0.1860354, y: 0.36821693}
+  m_Offset: {x: 0.00029373914, y: -0.006140262}
+  m_Size: {x: 0.2014374, y: 0.35841995}
   m_Direction: 0
 --- !u!1 &2673972327073943723
 GameObject:
@@ -186,8 +186,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2673972327009117506}
   rootRigid: {fileID: 2673972327073943721}
-  bottomTransform: {fileID: 0}
-  bottomCollider: {fileID: 0}
   objectPooler: {fileID: 0}
   uiHp: {fileID: 0}
   collider2D: {fileID: 2673972327009117505}
