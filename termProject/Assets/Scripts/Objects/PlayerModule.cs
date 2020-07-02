@@ -144,7 +144,7 @@ public class PlayerModule : MonoBehaviour
                 collider2D.isTrigger = true;
             }
             isJump = true;
-            bottomCollider.enabled = true;
+            //bottomCollider.enabled = true;
         }
         else if (Input.GetKeyDown(KeyCode.LeftControl))
         {
@@ -212,6 +212,51 @@ public class PlayerModule : MonoBehaviour
         if (collision.gameObject.layer != 8 && collision.gameObject.layer != 9) return;
 
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer != 8 && collision.gameObject.layer != 9) return;
+
+        isRoll = true;
+        if (collision.gameObject.layer == 8)
+        {
+            PlatformEffector2D effector = collision.gameObject.GetComponent<PlatformEffector2D>();
+            if (effector.surfaceArc == 180)
+            {
+                if (curCollider && collision.gameObject.GetComponent<Collider2D>() != curCollider)
+                {
+                    effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
+                    effector.surfaceArc = 180;
+                    collider2D.isTrigger = false;
+                }
+                curCollider = collision.gameObject.GetComponent<Collider2D>();
+            }
+            else
+            { return; }
+        }
+        else
+        {
+
+            if (curCollider)
+            {
+                PlatformEffector2D effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
+                effector.surfaceArc = 180;
+                collider2D.isTrigger = false;
+            }
+            curCollider = null;
+        }
+
+        if (rootRigid.velocity.y <= 0)
+        {
+            animator.SetBool("Jump", false);
+            animator.SetBool("Drop", false);
+            isJump = false;
+            rootRigid.velocity = new Vector2(rootRigid.velocity.x, 0);
+        }
+        else if (rootRigid.velocity.y == 0)
+        {
+           // bottomCollider.enabled = false;
+        }
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -228,6 +273,7 @@ public class PlayerModule : MonoBehaviour
                 {
                     effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
                     effector.surfaceArc = 180;
+                    collider2D.isTrigger = false;
                 }
                 curCollider = collision;
             }
@@ -255,7 +301,7 @@ public class PlayerModule : MonoBehaviour
         }
         else if (rootRigid.velocity.y == 0)
         {
-            bottomCollider.enabled = false;
+           // bottomCollider.enabled = false;
         }
 
     }
@@ -285,24 +331,10 @@ public class PlayerModule : MonoBehaviour
                 isJump = true;
                 animator.SetBool("Jump", true);
                 animator.SetBool("Drop", true);
-                bottomCollider.enabled = true;
+                //bottomCollider.enabled = true;
             }
             idleTime = Time.time;
         }
-
-        if (Input.GetKeyDown(KeyCode.LeftAlt))
-        {
-            if (!isJump)
-            {
-                float dir;
-                animator.SetBool("Roll", true);
-                dir = isLeft ?
-                        -1 : 1;
-                rootRigid.AddForce(new Vector3(2.5f * dir, 2.5f, 0));
-            }
-        }
-        else
-        { animator.SetBool("Roll", false); }
 
     }
     

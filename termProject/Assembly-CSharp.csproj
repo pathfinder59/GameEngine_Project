@@ -64,11 +64,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Destroier.cs" />
     <Compile Include="Assets\Scripts\EndManager.cs" />
-    <Compile Include="Assets\Scripts\Event\EventDatabase.cs" />
     <Compile Include="Assets\Scripts\Event\EventEmitter.cs" />
     <Compile Include="Assets\Scripts\Event\EventHandler.cs" />
     <Compile Include="Assets\Scripts\Event\EventSubscriber.cs" />
-    <Compile Include="Assets\Scripts\Event\KpuEvent.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\IDamagable.cs" />
     <Compile Include="Assets\Scripts\LightFlicker.cs" />
