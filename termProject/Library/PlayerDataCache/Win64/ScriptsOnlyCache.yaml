@@ -5,7 +5,6 @@ ScriptsOnlyBuild:
     - Boomb
     - CrossBow
     - EndManager
-    - EventDatabase
     - EventHandler
     - FireTrap
     - GameManager
@@ -75,6 +74,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -88,13 +91,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 13176}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13488}
+      Script: {instanceID: 13486}
     - Class: 114
-      Script: {instanceID: 13580}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,9 +133,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
       Script: {instanceID: 0}
     - Class: 66
       Script: {instanceID: 0}
@@ -141,6 +144,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -171,39 +178,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12302}
     - Class: 114
-      Script: {instanceID: 12328}
+      Script: {instanceID: 12356}
     - Class: 114
-      Script: {instanceID: 12358}
+      Script: {instanceID: 12530}
     - Class: 114
-      Script: {instanceID: 12532}
+      Script: {instanceID: 12546}
     - Class: 114
-      Script: {instanceID: 12548}
+      Script: {instanceID: 12692}
     - Class: 114
-      Script: {instanceID: 12694}
+      Script: {instanceID: 12914}
     - Class: 114
-      Script: {instanceID: 12916}
+      Script: {instanceID: 13066}
     - Class: 114
-      Script: {instanceID: 13068}
+      Script: {instanceID: 13070}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13176}
+      Script: {instanceID: 13316}
     - Class: 114
-      Script: {instanceID: 13318}
+      Script: {instanceID: 13424}
     - Class: 114
-      Script: {instanceID: 13426}
+      Script: {instanceID: 13486}
     - Class: 114
-      Script: {instanceID: 13488}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 13580}
+      Script: {instanceID: 13830}
     - Class: 114
-      Script: {instanceID: 13832}
+      Script: {instanceID: 14092}
     - Class: 114
-      Script: {instanceID: 14096}
+      Script: {instanceID: 14104}
     - Class: 114
-      Script: {instanceID: 14108}
-    - Class: 114
-      Script: {instanceID: 14188}
+      Script: {instanceID: 14184}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -255,6 +260,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
@@ -268,14 +277,16 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12196}
     - Class: 114
-      Script: {instanceID: 13580}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -300,9 +311,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -325,17 +342,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12238}
     - Class: 114
-      Script: {instanceID: 12840}
+      Script: {instanceID: 12838}
     - Class: 114
-      Script: {instanceID: 13176}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13196}
+      Script: {instanceID: 13194}
     - Class: 114
-      Script: {instanceID: 13580}
+      Script: {instanceID: 13578}
     - Class: 114
-      Script: {instanceID: 13808}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -781,19 +798,13 @@ ScriptsOnlyBuild:
     className: ObjectPooler
   - hash:
       serializedVersion: 2
-      Hash: 5bd5d4860b0fbe3d53e6304fac307257
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EventDatabase
-  - hash:
-      serializedVersion: 2
       Hash: 3c2b11a8027702f7fef4a819d8b9191a
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachinePOV
   - hash:
       serializedVersion: 2
-      Hash: 7d1dcdd5474dbc12bc1d2f22c851c0e9
+      Hash: bff3e93a43b4164991f2752e6d36179c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Skeleton
@@ -985,7 +996,7 @@ ScriptsOnlyBuild:
     className: CinemachineTargetGroup
   - hash:
       serializedVersion: 2
-      Hash: 63877c7e3fe9c85c330e38c8d36e0d35
+      Hash: ae4bdeb867d57d8f29527f482c123e31
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EventHandler
@@ -1411,7 +1422,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 820443087960d0d4a2fb41fd95e6bd59
+      Hash: 5afeb101457ad372372b55df6f2a9dd6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerModule

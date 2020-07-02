@@ -18,5 +18,9 @@ public class StartManager : MonoBehaviour
         {
             SceneManager.LoadScene("GameScene");
         }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }

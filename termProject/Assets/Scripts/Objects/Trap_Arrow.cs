@@ -27,7 +27,6 @@ public class Trap_Arrow : MonoBehaviour
         HitPoint -= damageAmount;
     }
 
-    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 13 || collision.gameObject.layer == 14) return;

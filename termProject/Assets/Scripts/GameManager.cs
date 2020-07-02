@@ -54,8 +54,7 @@ public class GameManager : MonoBehaviour
         Vector3 position = player.transform.localPosition;
         position.y = position.y + 0.3f;
         cam.transform.localPosition = position;
-        
-        
+
     }
 
     public void ResetPlayerPosition()

@@ -24,8 +24,7 @@ public class PlayerModule : MonoBehaviour
     */
     [SerializeField] private Animator animator = null;
     [SerializeField] private Rigidbody2D rootRigid = null;
-    [SerializeField] private Transform bottomTransform = null;
-    [SerializeField] private CircleCollider2D bottomCollider = null;
+    
     [SerializeField] private ObjectPooler objectPooler = null;
     [SerializeField] private TMPro.TextMeshProUGUI uiHp = null;
     [SerializeField] private Collider2D collider2D = null;
@@ -116,6 +115,10 @@ public class PlayerModule : MonoBehaviour
                 animator.SetBool("Sit", false);
             isDown = false;
         }
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("StartScene");
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -191,7 +194,7 @@ public class PlayerModule : MonoBehaviour
         {
             animator.SetBool("Jump", true);
             transform.Translate(0, 0.001f, 0);
-            rootRigid.AddForce(new Vector2(0, 40f));
+            rootRigid.AddForce(new Vector2(0, 80f));
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
