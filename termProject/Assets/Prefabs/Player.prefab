@@ -191,6 +191,7 @@ MonoBehaviour:
   bottomCollider: {fileID: 2673972328790269737}
   objectPooler: {fileID: 0}
   uiHp: {fileID: 0}
+  collider2D: {fileID: 2673972327009117505}
 --- !u!1 &2673972328790269738
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class PlayerModule : MonoBehaviour
     [SerializeField] private CircleCollider2D bottomCollider = null;
     [SerializeField] private ObjectPooler objectPooler = null;
     [SerializeField] private TMPro.TextMeshProUGUI uiHp = null;
-
+    [SerializeField] private Collider2D collider2D = null;
     private bool isLeft = false;
     private bool isReverse = false;
     private bool isMove = false;
@@ -141,6 +141,7 @@ public class PlayerModule : MonoBehaviour
                 animator.SetBool("Drop", true);
                 PlatformEffector2D effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
                 effector.surfaceArc = 0.0f;
+                collider2D.isTrigger = true;
             }
             isJump = true;
             bottomCollider.enabled = true;
@@ -178,6 +179,10 @@ public class PlayerModule : MonoBehaviour
             EventHandler.Instance.Emit("PlayerDied");
             life--;
         }
+        if (collision.gameObject.layer == 20)
+        {
+            SceneManager.LoadScene("ClearScene");
+        }
         if (collision.gameObject.layer == 15)
         {
             jumpPower += 10.0f;
@@ -204,14 +209,14 @@ public class PlayerModule : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer != 8 && collision.gameObject.layer != 9 && collision.gameObject.layer != 11) return;
+        if (collision.gameObject.layer != 8 && collision.gameObject.layer != 9) return;
 
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         
-        if (collision.gameObject.layer != 8 && collision.gameObject.layer != 9 && collision.gameObject.layer != 11) return;
+        if (collision.gameObject.layer != 8 && collision.gameObject.layer != 9) return;
 
         isRoll = true;
         if (collision.gameObject.layer == 8)
@@ -236,6 +241,7 @@ public class PlayerModule : MonoBehaviour
             {
                 PlatformEffector2D effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
                 effector.surfaceArc = 180;
+                collider2D.isTrigger = false;
             }
             curCollider = null;
         }
