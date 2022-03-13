@@ -144,7 +144,7 @@ public class PlayerModule : MonoBehaviour
                 animator.SetBool("Drop", true);
                 PlatformEffector2D effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
                 effector.surfaceArc = 0.0f;
-                collider2D.isTrigger = true;
+                //collider2D.isTrigger = true;
             }
             isJump = true;
             //bottomCollider.enabled = true;
@@ -194,6 +194,7 @@ public class PlayerModule : MonoBehaviour
         {
             animator.SetBool("Jump", true);
             transform.Translate(0, 0.001f, 0);
+            rootRigid.velocity = Vector2.zero;
             rootRigid.AddForce(new Vector2(0, 80f));
         }
     }
@@ -229,7 +230,7 @@ public class PlayerModule : MonoBehaviour
                 {
                     effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
                     effector.surfaceArc = 180;
-                    collider2D.isTrigger = false;
+                    //collider2D.isTrigger = false;
                 }
                 curCollider = collision.gameObject.GetComponent<Collider2D>();
             }
@@ -243,7 +244,7 @@ public class PlayerModule : MonoBehaviour
             {
                 PlatformEffector2D effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
                 effector.surfaceArc = 180;
-                collider2D.isTrigger = false;
+               // collider2D.isTrigger = false;
             }
             curCollider = null;
         }
@@ -276,7 +277,7 @@ public class PlayerModule : MonoBehaviour
                 {
                     effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
                     effector.surfaceArc = 180;
-                    collider2D.isTrigger = false;
+                   // collider2D.isTrigger = false;
                 }
                 curCollider = collision;
             }
@@ -290,7 +291,7 @@ public class PlayerModule : MonoBehaviour
             {
                 PlatformEffector2D effector = curCollider.gameObject.GetComponent<PlatformEffector2D>();
                 effector.surfaceArc = 180;
-                collider2D.isTrigger = false;
+                //collider2D.isTrigger = false;
             }
             curCollider = null;
         }
